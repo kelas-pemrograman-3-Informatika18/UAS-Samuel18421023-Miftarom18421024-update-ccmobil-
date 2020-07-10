@@ -43,15 +43,15 @@
             <q-td key="deskripsi" :props="props">
               <div class="ellipsis" style="max-width: 200px">{{ props.row.deskripsi }}</div>
             </q-td>
-            <q-td key="rating" :props="props">
-              {{ props.row.rating }}
+            <q-td key="ccmobil" :props="props">
+              {{ props.row.ccmobil }}
             </q-td>
             <q-td key="harga" :props="props">
               Rp. {{ props.row.harga }},-
             </q-td>
             <q-td key="aksi" :props="props">
               <div class="row q-gutter-md">
-                <q-btn :to="{ name: 'formEditMobil', params: { id: props.row._id }}" label="Edit" icon="edit" color="warning" unelevated/>
+                <q-btn :to="{ name: 'formEditMobil', params: { id: props.row._id }}" label="Edit" icon="edit" color="primary" unelevated/>
                 <q-btn @click="deleteMobil(props.row._id)" label="Hapus" icon="delete" color="negative" unelevated/>
               </div>
             </q-td>
@@ -73,7 +73,7 @@ export default {
         { name: 'tahun', align: 'left', label: 'Tahun', field: 'tahun', sortable: true },
         { name: 'warna', align: 'left', label: 'Warna', field: 'warna', sortable: true },
         { name: 'deskripsi', align: 'left', label: 'Deskripsi', field: 'deskripsi', sortable: true },
-        { name: 'rating', align: 'left', label: 'Rating', field: 'rating', sortable: true },
+        { name: 'ccmobil', align: 'left', label: 'CC Mobil', field: 'ccmobil', sortable: true },
         { name: 'harga', align: 'left', label: 'Harga', field: 'harga', sortable: true },
         { name: 'aksi', align: 'left', label: 'Aksi', field: 'aksi' }
       ],

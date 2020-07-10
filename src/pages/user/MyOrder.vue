@@ -82,6 +82,7 @@ export default {
     getData () {
       this.$axios.get(`order/getorderbyuser/${this.$q.localStorage.getItem('dataUser')._id}`)
         .then((res) => {
+          console.log(res)
           if (res.data.sukses) {
             this.data = res.data.data
           }

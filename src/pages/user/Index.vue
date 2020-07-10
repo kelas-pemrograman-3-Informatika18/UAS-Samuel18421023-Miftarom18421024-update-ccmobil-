@@ -39,14 +39,11 @@
                 {{ mobil.merekMobil }}
               </div>
             </div>
-            <q-rating
-            v-model="mobil.rating"
-            readonly
-            :max="5"
-            size="32px"
-            color="red"
-            icon="star_border"
-            icon-selected="star"/>
+            <div class="row no-wrap items-center">
+              <div class="col text-h6 ellipsis">
+                {{ mobil.ccmobil }} - CC
+              </div>
+            </div>
           </q-card-section>
           <q-card-section class="q-pt-none">
             <div class="text-subtitle1">

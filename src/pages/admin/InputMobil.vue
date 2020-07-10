@@ -51,15 +51,12 @@
             :rules="[ val => val > 0 || 'mohon isi harga Mobil']"
           />
           <div class="flex">
-            Pilih rating
-            <q-rating
-            v-model="form.rating"
-            :max="5"
-            class="q-ml-md"
-            size="32px"
-            color="red"
-            icon="star_border"
-            icon-selected="star"/>
+            <q-input
+            filled
+            v-model="form.ccmobil"
+            type="textarea"
+            label="Deskripsi Mobil"
+            />
           </div>
           <q-input
           filled
@@ -86,7 +83,7 @@ export default {
         harga: 0,
         tahun: null,
         warna: null,
-        rating: 0,
+        ccmobil: 0,
         deskripsi: null
       },
       optionWarna: [
